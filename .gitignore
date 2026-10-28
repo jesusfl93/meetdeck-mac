@@ -1,0 +1,8 @@
+build/
+dist/
+backup/
+plugin.log
+.DS_Store
+# Iconos generados con SF Symbols en cada Mac (no redistribuibles)
+icons/*.png
+plugin/*.sdPlugin/imgs/*.png

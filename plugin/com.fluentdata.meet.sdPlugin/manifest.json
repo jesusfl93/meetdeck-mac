@@ -1,0 +1,39 @@
+{
+  "UUID": "com.fluentdata.meet",
+  "Name": "Meet Status",
+  "Version": "1.0.0.0",
+  "Author": "FluentData",
+  "Description": "Mic y cámara de Google Meet con el estado real en el botón.",
+  "Icon": "imgs/plugin",
+  "Category": "Meet",
+  "CategoryIcon": "imgs/category",
+  "CodePath": "plugin.js",
+  "SDKVersion": 2,
+  "Software": { "MinimumVersion": "6.5" },
+  "OS": [{ "Platform": "mac", "MinimumVersion": "12" }],
+  "Nodejs": { "Version": "20", "Debug": "disabled" },
+  "Actions": [
+    {
+      "UUID": "com.fluentdata.meet.mic",
+      "Name": "Mic de Meet",
+      "Tooltip": "Activa o silencia el micrófono en Google Meet",
+      "Icon": "imgs/mic-on",
+      "Controllers": ["Keypad"],
+      "States": [{ "Image": "imgs/mic-idle", "ShowTitle": false }],
+      "DisableAutomaticStates": true,
+      "SupportedInMultiActions": false,
+      "UserTitleEnabled": false
+    },
+    {
+      "UUID": "com.fluentdata.meet.cam",
+      "Name": "Cámara de Meet",
+      "Tooltip": "Enciende o apaga la cámara en Google Meet",
+      "Icon": "imgs/cam-on",
+      "Controllers": ["Keypad"],
+      "States": [{ "Image": "imgs/cam-idle", "ShowTitle": false }],
+      "DisableAutomaticStates": true,
+      "SupportedInMultiActions": false,
+      "UserTitleEnabled": false
+    }
+  ]
+}
